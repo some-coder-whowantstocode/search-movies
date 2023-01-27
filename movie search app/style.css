@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100vw;
+    background-color: rgb(111, 143, 237);
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#search{
+    margin-top: 6px;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 39px;
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+}
+.box{
+    height: 300px;
+    width: 330px;
+    border: 2px solid black;
+    margin: 5px;
+    position: relative;
+    border-radius: 15px;
+    border: none;
+    background-color: black;
+    z-index: 10;
+    display: flex;
+    justify-content: last baseline;
+    flex-direction: column-reverse;
+    /* margin: auto; */
+    /* padding: auto; */
+    overflow: hidden;
+}
+img{
+    height: 300px;
+    border-radius: 15px;
+}
+.overlay{
+    opacity: 0;
+    position: absolute;
+    /* transform: translate(0%,90%); */
+    transition: all 0.5s ease-in-out;
+    background-color: white;
+    max-width: 100%;
+    max-height: 100%;
+    min-height: auto;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    z-index: 5;
+    transform: translate(0%,30%);
+    overflow: hidden;
+    
+}
+.box:hover .overlay{
+    opacity: 1;
+    /* transform: translate(0%,30%); */
+    transform: none;
+}
+.overlay span{
+    float: right;
+    position: absolute;
+    transform: translate(268px, -45%);
+    font-size: 25px;
+    font-weight: bold;
+    color: gold;
+}
+.overlay h2{
+    padding: 9px;
+    padding-left: 0;
+}
+.overlay h3{
+    padding-bottom: 4px;
+    
+}
+p{
+    font-size: auto;
+}
